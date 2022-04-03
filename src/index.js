@@ -33,6 +33,4 @@ qs('.hero__cta').setAttribute(
   'href',
   data.data.doorsteps_home_page.hero.cta.url
 );
-qs('.hero__cta').text = data.data.doorsteps_home_page.hero.copy;
-
-console.table(data.data.doorsteps_home_page.hero.heading_h1);
+qs('.hero__cta').text = data.data.doorsteps_home_page.hero.cta.copy;
