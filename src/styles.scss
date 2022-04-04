@@ -1,5 +1,44 @@
 $primary: #ed7361;
 $secondary: #32324b;
 $border-radius: 1.5em;
+$headings-font-weight: 700 !default;
+$btn-font-weight: bold !default;
+
+$font-family-sans-serif: 'Poppins', sans-serif, 'Helvetica Neue', Helvetica,
+  Arial, sans-serif !default;
+$font-family-serif: Georgia, 'Times New Roman', Times, serif !default;
+// $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
+
+// customisations
+.hero {
+  @include media-breakpoint-down(md) {
+    max-height: 430px;
+  }
+  &__img {
+    border-radius: 0.75em;
+  }
+}
+
+.launch {
+}
+
+$utilities: map-merge(
+  $utilities,
+  (
+    'height': (
+      property: height,
+      responsive: true,
+      class: h,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto,
+      ),
+    ),
+  )
+);
