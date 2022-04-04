@@ -11,22 +11,66 @@
   </head>
   
   <body>
-  
+
+    <!-- non render blocking load, uses swap for the use of fallback font until resources are ready to replace -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-  <div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <img src="https://assets-global.website-files.com/613866b997a5596e75141c49/61386910ca9036bd6f31fe06_Logo-horizontal-c.svg" alt="doorsteps home" width="192" height="36" />
-      </a>
 
-      <ul class="nav nav-pills">
-      <li class="nav-item"><a href="#" class="nav-link">Market Insights</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Who are we</a></li>
-      <li class="nav-item"><a href="#" class="nav-link active rounded px-4 py-2" aria-current="page">Speak to a Broker</a></li>
-      </ul>
-    </header>
-  </div>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link">Market Insights</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Who are we</a></li>
+          <li class="nav-item"><a href="#" class="nav-link active rounded px-4 py-2" aria-current="page">Speak to a Broker</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img src="https://assets-global.website-files.com/613866b997a5596e75141c49/61386910ca9036bd6f31fe06_Logo-horizontal-c.svg" alt="doorsteps home" width="192" height="36" />
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link">Market Insights</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Who are we</a></li>
+          <li class="nav-item"><a href="#" class="nav-link active rounded px-4 py-2" aria-current="page">Speak to a Broker</a></li>
+        </ul>
+      </header>
+    </div>
 
 
 
